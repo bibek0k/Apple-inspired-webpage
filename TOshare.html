@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apple</title>
+  <link rel="stylesheet" href="testS.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,700;1,14..32,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100;1,14..32,100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,193;1,14..32,193&display=swap" rel="stylesheet">
+<style>
+    /* navbar */
+    body{
+        overflow-x: hidden;
+    }
+    .options {
+        list-style: none;
+        display: flex;
+        gap: 0px;
+        
+    }
+    
+    .options li {
+        flex-basis: 100px;
+        flex-shrink: 0;
+        padding-left: 50px;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 193;
+        font-style: normal;
+        color: #2c2c2c;
+        border: #ebe8e8 1px solid;
+        border-top: 0;
+        border-bottom: 0;
+        transition: transform 0.5s ease;
+    }
+    
+    .navbar {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: end;
+    }
+    
+    .navbar h1 {
+        font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-style: normal;
+      color: #959595;
+    
+    }
+    
+    .navbar h1 img {
+        transform: translateY(7px);
+        
+    }
+    .navbar h1{
+        filter: brightness(0);
+        transition: filter 0.7s ease;
+    }
+    .navbar a {
+        text-decoration: none;
+    }
+    
+    /* hover */
+    .options li:hover{
+        transform: scale(1.1);
+        color: black;
+    }
+    
+    /* 2nd section row */
+    .navbar h1:hover{
+        filter: brightness(100%);
+    }
+    
+    .row {
+        display: grid;
+        flex-wrap: wrap;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        background: linear-gradient(270deg, #ffffff, #d4eaf7); 
+        background-size: 400% 400%; 
+        animation: gradientAnimation 6s infinite alternate ease-in-out;
+    }
+    .preview {
+        
+        height: 400px; 
+        
+    }
+    
+    @keyframes gradientAnimation {
+        0% {
+            background-position: 0% 50%; 
+        }
+        50% {
+            background-position: 100% 50%; 
+        }
+        100% {
+            background-position: 0% 50%; 
+        }
+    }
+    
+    .preview img{
+        height: 300px;
+        transition: transform 1s ease;
+    }
+    
+    
+    .preview img:hover{
+        transform: scale(1.1);
+    }
+    
+    .coloms {
+        display: grid;
+        flex-wrap: wrap;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        justify-content: center;
+        background: linear-gradient(to top, #ffffff, #d4eaf7); 
+    }
+    
+    .model {
+        height: 500px;
+        border-right: 1px #cfcfcf solid;
+    }
+    
+    
+    
+    
+    /* new new new */
+    
+    .card{
+        width: 300px;
+        
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease;
+        
+    }
+    
+    
+    
+    
+    .card-image img{
+        width: 100%;
+        height: 300px;
+        transition: transform 1s ease;
+    
+    }
+    .card-image img:hover{
+        transform: translateY(-50px);
+    }
+    
+    .card-content button{
+        background: #060f48;
+        color: white;
+        padding: 5px;
+        font-size: 16px;
+        outline: none;
+        transition: transform 0.3s ease;
+        font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-style: normal;
+    }
+    
+    .card-content button:hover{
+        background-color: #002c41;
+        transform: scale(1.2);
+    }
+    
+    
+    @keyframes loading{
+        0%{
+            transform: scale(1.0)
+        }
+        50%{
+            transform: scale(1.1)
+        }
+        100%{
+            transform: scale(1.0)
+        }
+    }
+    
+    .card-content h1{
+        font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-style: normal;
+    }
+    
+    .card-content p{
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 193;
+        font-style: normal;
+    }
+    
+    /* fotter */
+    
+    footer h6, p{
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 193;
+        font-style: normal;  
+    }
+    
+    footer a img{
+        transition: transform 1s ease;
+    }
+    
+    footer a img:hover{
+        transform: scale(1.2);
+    }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+      <a href="https://www.apple.com/"><h1>
+          <img height="35px" src="https://imgs.search.brave.com/1bhL6ufZamxoV5Ikhs9IXvQoGD4DPumk9Nh2polNLQ8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly8xMDAw/bG9nb3MubmV0L3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDE2LzEw/L0FwcGxlX2xvZ29f/Z3JleS02MjR4NDAw/LnBuZw">
+        Apple
+      </h1></a>
+      
+      <ul class="options">
+        <li>Home</li>
+        <li>Store</li>
+        <li>Service</li>
+        <li>Help</li>
+      </ul>
+
+    </nav>
+
+    <section class="row" >
+      <div class="preview"></div>
+      <div class="preview">
+        <img src="https://pngimg.com/uploads/iphone16/iphone16_PNG31.png">
+      </div>
+      
+      <div class="preview"></div>
+    </section>
+    <br>
+
+    <!-- COLOMS -->
+    <section class="coloms">
+      <!-- 111111111111111111111111111111111111111111111111 -->
+      <div class="model">
+        <main class="card">
+          <div class="card-image">
+              <img src="https://imgs.search.brave.com/U_nTdT0Eqmx4MJ-247ObUsBJiVhQa30p4EEemOcFvw0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nYWxsLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvNS9BcHBs/ZS1pUGhvbmUtMTIt/UE5HLUZyZWUtRG93/bmxvYWQucG5n" alt="IPhone">
+          </div>
+          <div class="card-content">
+              <h1>iPhone 12</h1>
+              <p>Rs. 48,900 <br><br>The iPhone 12 Pro display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle. When measured as a standard rectangular shape, the screen is 6.06 inches diagonally (actual viewable area is less).</p>
+              <button>Buy Now</button>
+          </div>
+  
+      </main>
+      </div>
+<!-- 22222222222222222222222222222222222222222 -->
+      <div class="model">
+        <main class="card">
+          <div class="card-image">
+              <img src="https://imgs.search.brave.com/U_nTdT0Eqmx4MJ-247ObUsBJiVhQa30p4EEemOcFvw0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nYWxsLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvNS9BcHBs/ZS1pUGhvbmUtMTIt/UE5HLUZyZWUtRG93/bmxvYWQucG5n" alt="IPhone">
+          </div>
+          <div class="card-content">
+              <h1>iPhone 12</h1>
+              <p>Rs. 48,900 <br><br>The iPhone 12 Pro display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle. When measured as a standard rectangular shape, the screen is 6.06 inches diagonally (actual viewable area is less).</p>
+              <button>Buy Now</button>
+          </div>
+  
+      </main>
+      </div>
+<!-- 3333333333333333333333333333333333333333333333333333 -->
+      <div class="model">
+        <main class="card">
+          <div class="card-image">
+              <img src="https://imgs.search.brave.com/U_nTdT0Eqmx4MJ-247ObUsBJiVhQa30p4EEemOcFvw0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nYWxsLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvNS9BcHBs/ZS1pUGhvbmUtMTIt/UE5HLUZyZWUtRG93/bmxvYWQucG5n" alt="IPhone">
+          </div>
+          <div class="card-content">
+              <h1>iPhone 12</h1>
+              <p>Rs. 48,900 <br><br>The iPhone 12 Pro display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle. When measured as a standard rectangular shape, the screen is 6.06 inches diagonally (actual viewable area is less).</p>
+              <button>Buy Now</button>
+          </div>
+  
+      </main>
+      </div>
+<!-- 4444444444444444444444444444444444444444444444444444444444444 -->
+      <div class="model">
+        <main class="card">
+          <div class="card-image">
+              <img src="https://imgs.search.brave.com/U_nTdT0Eqmx4MJ-247ObUsBJiVhQa30p4EEemOcFvw0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nYWxsLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvNS9BcHBs/ZS1pUGhvbmUtMTIt/UE5HLUZyZWUtRG93/bmxvYWQucG5n" alt="IPhone">
+          </div>
+          <div class="card-content">
+              <h1>iPhone 12</h1>
+              <p>Rs. 48,900 <br><br>The iPhone 12 Pro display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle. When measured as a standard rectangular shape, the screen is 6.06 inches diagonally (actual viewable area is less).</p>
+              <button>Buy Now</button>
+          </div>
+  
+      </main>
+      </div>
+
+    </section>
+  <br> <br> <br> <br> <br><br> <br> <br> <br> <br>
+  <footer>
+    <h6>Contact info of Developer</h6>
+        
+        <a  target="_blank" href="https://www.instagram.com/bibek.0k?igsh=MWMzdWJ5ZnFiYjZoMw=="><img class="ICON" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAABWVBMVEVyHVFHcEx0Fvp8Fv1yFP1/FfyLCOyfBOmtAeS7AuDHAd3UANjZAs7rD6xyFvzjANTqAMHoA7l2F/yPFfx8GPmfD/zFF/XVWujoZuLyZt3pRt/yGdHyA8j1AKTViPj/9Pr////8g9f9A7r3DZz5vO794Pf+ruj9B6uzFPv7JLv+AJr+BI/+YMP/1vD+AIThG+n9GZn/vd3/YZz+AXP+GoT/r8r+AmT/b5z+HHH+I3f+G2P/ur7+FFD+Klb+fYv/wcr+LUf+LWX+AFn+Nzr+Ohz+RT7+inP+Si7/ztD+TxL/zbv+Wy//9fH+WgL+c1X+ZyX+PUv+Bzv+VXD+cxr/6eL+aQT+eAX+nDj+gwD+gxH+fSL+rYn+jwD+iwL+XhX/3rn/1bH9ZR/+lwP+nwH+xHH8ZC3+qAH+sAD+wAP+x1P+zGb+pl79mQn+uAD9J3T+ygD9O1n8pRL9twuaEkMNAAAAc3RSTlMBAF3G///////////GW9j//9nY/1r///////////7//////8b/////////////////////////////////////////////////////////////////////////////////xf///1v////////Y/9j/2VzGSus+GgAAAeNJREFUeAFFjEWiU0EQRc/tqu74V9wZ4TBiB6wG3wpzVoQ7zHCXeELypHH+KVchJAESaEs0IUv0Zv+7fwLgSAOk9ZFghcnfDw4AAg18cyhWCKNVob9NCZjQLWVrEGhJbJGDoCBpMwCrJTETAKBWgdeRGb4dmJW56PdI/KU1K4X15N+AFsW0+3/WVm7Pa0Pmu4Fh7HcbRIjMIhr3FItUGAH4SNZKjK32YjKpK3Iv0yUY0b8g0Vs0oK+8wbeyMBAQwVeo44R1z7XWq6rqpn5jiTmAeQO3iceg9zkYzKvc71iEmMFbqCJJ4tDcKFrLjX5D/MEdq8GpIUUgd/tgGboTgiUDPDZ44SXNpr0gWRcAgqEmEPJRNVPOxYaOth0oAHdCxWoOzslH+RCvlafYMgFUHvAIHoCjz16io80BrH/j0AAcJ9KWKkhn5sRyGjsDtr/sqyrsWNO1cW9/cDNLZgHLSzVvn+wMq9qbKKwy7TiIaKTW56pzW6Oa+N1OKEQdvvl2RyOE4DEOZurd1cHNeab27tyjOPfhFlucXP04ovF97B6jTOzdJwFLaNAff7N6c8incH1VpiSR67q2VgjzUU7JgbMTiQtFKmgAsCAuczlflmVZn7iGBFc1awB/p4tqUS3LDb8OPwBrSrZIO/KHZwAAAABJRU5ErkJggg==" />
+        </a>       
+        <a  target="_blank" href="https://x.com/bibek0k"><img class="ICON" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAAAAABXZoBIAAAA/0lEQVR4AbXPIazCMACE4d+L2qoZFEGSIGcRc/gJJB5XMzGJmK9EN0HMi+qaibkKVF1txdQe4g0YzPK5yyWXHL9TaPNQ89LojH87N1rbJcXkMF4Fk31UMrf34hm14KUeoQxGArALHTMuQD2cAWQfJXOpgTbksGr9ng8qluShJTPhyCdx63POg7rEim95ZyR68I1ggQpnCEGwyPicw6hZtPEGmnhkycqOio1zm6XuFtyw5XDXfGvuau0dXHzJp8pfBPuhIXO9ZK5ILUCdSvLYMpc6ASBtl3EaC97I4KaFaOCaBE9Zn5jUsVqR2vcTJZO1DdbGoZryVp94Ka/mQfE7f2T3df0WBhLDAAAAAElFTkSuQmCC"/></a>
+        <a href="https://www.linkedin.com/in/bibek-debnath-538019345/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+            <img class="ICON" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAATlBMVEVHcEwAd7UAd7UAd7UAd7UAd7UAd7UAd7UAd7UAd7X///8CcLIAaa5Nj8Hn8/lypMyawNw6hby81+j0+/0ZeLXT5fBnnchdlcOLtNWxzePrILPNAAAACnRSTlMAUn3/Gpo9+Wne3pzmuwAAAMZJREFUKJHNk9sWgiAQRcfQjIZrIOr//2gzRK6K8b3z4JG1UeYGAFz03EtPwNLqRCPAdMaUBmBDg0agV4ZYXAoCvTHMd5JHEaJn+Og/rTAy3GSojE9pPztTGczMELGGbvATRlJWmc3EbQ++7mq/dXTmipbDWhMH4OI3tBUulZEbAR6yKEBXbKiZSXClMi/knNovdJmWoRWsg/j/MB21TV0qWLz31BV6Fl5aeuHyDXVssXXyZe/GKoCxn4CmgSZ+lG7DrPQV4AnbbBfzU77xIAAAAABJRU5ErkJggg=="/>    
+        </a> 
+        <br/>
+        <br/>
+        <p id="copy">Copyright by Bibek®</p>
+  </footer>
+  
+</body>
+</html>
